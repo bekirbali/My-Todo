@@ -26,9 +26,11 @@
               placeholder="Search a list"
               value=""
             /></div>
+            <div class="small-screen">
             <button type="submit" class="btn-search" id="btn-search">
-             Search
+             <p class="btn-search-p">Search</p>
             </button>
+          </div>
           </div>
         </form>
       </nav>
@@ -41,9 +43,14 @@
         <div class="todo-form">
           <form action="">
             <div class="input-box">
-            <input type="text" name="todo" id="todo" placeholder="Add your todo here" />
-            <button id="btn-add" type="submit">
+            <input type="text" name="todo" id="todo" class="todoClass" placeholder="Add your todo here" />
+            <button id="btn-add" class="icon-add" type="submit">
               <i class="fa-solid fa-plus"></i>
+            </button>
+          </div>
+          <div class="input-btn">
+            <button  class="text-add" id="btn-add2" type="submit">
+              ADD
             </button>
           </div>
           </form>

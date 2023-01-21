@@ -7,6 +7,7 @@ const searchDiv = document.querySelector(".magnifyer-input");
 //* buttons
 const searchBtn = document.getElementById("btn-search");
 const addBtn = document.getElementById("btn-add");
+const addBtn2 = document.getElementById("btn-add2");
 
 //* input
 const input = document.getElementById("todo");
@@ -24,6 +25,25 @@ const getItemFromLocal = () => {
 };
 
 addBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (!input.value) {
+    alert("Please enter a text");
+    return;
+  }
+  let newTodo = {
+    id: new Date().getTime(),
+    completed: false,
+    todoName: input.value,
+  };
+  createTodo(newTodo);
+  todoListLocalStorage.push(newTodo);
+  localStorage.setItem(
+    "todoListLocalStorage",
+    JSON.stringify(todoListLocalStorage)
+  );
+  e.target.closest("form").reset();
+});
+addBtn2.addEventListener("click", (e) => {
   e.preventDefault();
   if (!input.value) {
     alert("Please enter a text");
