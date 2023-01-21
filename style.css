@@ -1,0 +1,211 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  cursor: default;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eaeaea;
+  height: 100vh;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  background-image: url(./img/notebook.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body #main-nav {
+  padding: 0 1rem;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+body #main-nav .check-list {
+  width: 100px;
+}
+body #main-nav .nav-text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+body #main-nav .nav-search form {
+  display: flex;
+  position: relative;
+}
+body #main-nav .nav-search input {
+  border-radius: 0.4rem;
+  border: none;
+  padding: 0.35rem 0;
+  padding-left: 1.6rem;
+  box-shadow: 2px 0 1.3rem 0.1rem rgba(0, 0, 0, 0.4);
+  margin: 0 1rem;
+  font-size: 1rem;
+}
+body #main-nav .nav-search .btn-search {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #6e6b6b;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  transition: all 0.2s;
+}
+body #main-nav .nav-search .btn-search:hover {
+  cursor: pointer;
+  background-color: #7b7878;
+}
+body #main-nav .nav-search .btn-search:active {
+  background-color: #615e5e;
+}
+body #main-nav .nav-search .fa-magnifying-glass {
+  position: absolute;
+  left: 1.25rem;
+  top: 0.5rem;
+}
+body #plural {
+  display: none;
+}
+body .plural-show {
+  display: inline-block;
+}
+body .u-list {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body .u-list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body .u-list li .fa-check:hover {
+  cursor: pointer;
+}
+body .u-list li .fa-trash {
+  position: absolute;
+  right: 0.5rem;
+}
+body .u-list li .fa-trash:hover {
+  cursor: pointer;
+}
+body .u-list li p {
+  font-weight: 500;
+}
+body .u-list li .fa-check {
+  font-weight: 700;
+  color: red;
+  transition: 0.5s ease;
+}
+body .u-list li.checked p {
+  text-decoration: line-through;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.801);
+}
+body .u-list li.checked .fa-check {
+  color: rgb(0, 255, 0);
+  font-weight: 600;
+}
+body .u-list li:nth-child(odd) {
+  background-color: #dbdbdb;
+  padding: 0.2rem 0.5rem;
+  transition: ease-in-out 0.2s;
+}
+body .u-list li:nth-child(odd):hover {
+  transform: translate(1px, 1px);
+}
+body .u-list li:nth-child(even) {
+  background-color: #f4f4f4;
+  padding: 0.2rem 0.5rem;
+  transition: ease-in-out 0.2s;
+}
+body .u-list li:nth-child(even):hover {
+  transform: translate(1px, 1px);
+}
+body main {
+  height: 65vh;
+  width: 60vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+body main .container {
+  width: 75%;
+  background-color: rgba(0, 240, 180, 0.937254902);
+  padding: 1.5rem;
+  margin-top: 1rem;
+  box-shadow: 0 0.3rem 1.3rem 0.2rem rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+}
+body main .container .title {
+  margin-bottom: 1rem;
+}
+body main .container .todo-form form {
+  display: flex;
+  justify-content: center;
+}
+body main .container .todo-form form .input-box {
+  width: 75%;
+}
+body main .container .todo-form form .input-box #btn-add {
+  border: none;
+  border-radius: 50%;
+  background: none;
+  padding: 0.3rem;
+  transition: ease-in-out 0.3s;
+}
+body main .container .todo-form form .input-box #btn-add .fa-plus {
+  font-size: 1rem;
+}
+body main .container .todo-form form .input-box #btn-add:hover {
+  background-color: black;
+  color: white;
+}
+body main .container .todo-form form .input-box #todo {
+  width: 45%;
+  margin-right: 0.4rem;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 0.9rem 0.1rem rgba(0, 0, 0, 0.4);
+}
+body main .container li {
+  text-align: left;
+}
+
+/*# sourceMappingURL=style.css.map */
