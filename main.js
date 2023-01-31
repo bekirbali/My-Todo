@@ -69,7 +69,7 @@ searchBtn.addEventListener("click", (e) => {
   let text = search.value.toLowerCase();
   const items = ul.getElementsByTagName("p");
   Array.from(items).map((p) => {
-    let filter = p.firstChild.textContent;
+    let filter = p.firstChild.textContent.toLowerCase();
     if (filter.indexOf(text) !== -1) {
       p.parentElement.style.display = "flex";
     } else {
